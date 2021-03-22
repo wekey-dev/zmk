@@ -13,12 +13,20 @@ int zmk_ble_clear_bonds();
 int zmk_ble_prof_next();
 int zmk_ble_prof_prev();
 int zmk_ble_prof_select(uint8_t index);
+int zmk_ble_prof_switch(uint8_t index);
+int zmk_ble_prof_none();
 
 int zmk_ble_active_profile_index();
 bt_addr_le_t *zmk_ble_active_profile_addr();
 bool zmk_ble_active_profile_is_open();
 bool zmk_ble_active_profile_is_connected();
 char *zmk_ble_active_profile_name();
+
+bt_addr_le_t *zmk_ble_index_profile_addr(uint8_t index);
+bool zmk_ble_index_profile_is_open(uint8_t index);
+bool zmk_ble_index_profile_is_connected(uint8_t index);
+char *zmk_ble_index_profile_name(uint8_t index);
+bool zmk_ble_index_profile_force_disconnect(uint8_t index);
 
 int zmk_ble_unpair_all();
 bool zmk_ble_handle_key_user(struct zmk_key_event *key_event);

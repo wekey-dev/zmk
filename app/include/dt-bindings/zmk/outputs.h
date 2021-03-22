@@ -7,3 +7,7 @@
 #define OUT_TOG 0
 #define OUT_USB 1
 #define OUT_BLE 2
+#define OUT_BT_0 10
+#define OUT_BT_1 11
+#define OUT_BT_2 12
+#define OUT_USB_ONLY 99
