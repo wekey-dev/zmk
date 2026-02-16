@@ -1,0 +1,7 @@
+board:
+  name: we6k_v15
+  vendor: wekey
+  socs:
+    - name: nrf52840
+      variants:
+        - name: zmk

@@ -1,0 +1,13 @@
+file_format: "1"
+id: we6k_v15//zmk
+name: WE6K_V15
+type: board
+arch: arm
+features:
+  - keys
+  - encoder
+  - studio
+outputs:
+  - usb
+  - ble
+url: https://wekey.dev

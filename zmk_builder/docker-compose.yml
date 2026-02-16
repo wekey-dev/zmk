@@ -1,0 +1,13 @@
+# docker-compose.yml
+services:
+  wekey-builder:
+    build: .
+    image: wekey-builder
+    container_name: wekey-builder
+    volumes:
+      - ../:/workspace/zmk
+      - ../../nRF52_Bootloader:/workspace/nRF52_Bootloader
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    command: /bin/bash
